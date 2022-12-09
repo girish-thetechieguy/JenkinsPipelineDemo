@@ -15,8 +15,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Run all tests successfully'
-            }
-            steps {
                 echo 'Run all automation tests successfully'
             }
         }
