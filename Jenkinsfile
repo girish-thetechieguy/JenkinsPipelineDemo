@@ -2,35 +2,43 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Code') {
             steps {
-                echo 'Hello World'
+                echo 'Check out code successfully'
             }
         }
         stage('Build') {
             steps {
-                echo 'Hello Building'
-            }
-        }
-        stage('Integrate') {
-            steps {
-                echo 'Hello Integration'
+                echo 'Build successfully'
             }
         }
         stage('Test') {
             steps {
-                echo 'Hello Testing'
+                echo 'Run all tests successfully'
             }
-        }
-        stage('Deploy') {
             steps {
-                echo 'Hello Deploying'
+                echo 'Run all automation tests successfully'
             }
         }
         stage('Release') {
             steps {
-                echo 'Hello Releasing'
+                echo 'Released successfully'
             }
         }
+        stage('Deploy') {
+            steps {
+                echo 'Deployed successfully'
+            }
+        } 
+        stage('Operate') {
+            steps {
+                echo 'Operated successfully'
+            }
+        } 
+        stage('Monitor') {
+            steps {
+                echo 'Monitored successfully'
+            }
+        }        
     }
 }
